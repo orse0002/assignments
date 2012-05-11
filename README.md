@@ -1,4 +1,0 @@
-assignments
-===========
-
-our class assignments

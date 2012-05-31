@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+li{
+	cursor:crosshair;
+}
+
+.deleted{
+	color:#FF0000;
+	text-decoration:underline;
+}

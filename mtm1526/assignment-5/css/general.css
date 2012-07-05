@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color:#CCC;
+	font: normal 100%/1.5 sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	padding-top: 1em;
+	width: 30em;
+}
+
+.user-available, .email-available, .city-available{
+	font-size: 1.125em;
+}
+
+.user-available:before, .email-available:before, city-available:before{
+	content: "✔";
+	
+}
+
+.user-available[data-status="unchecked"], .email-available[data-status="unchecked"], .city-available[data-status="unchecked"] {
+	display: none;
+}
+
+.user-available[data-status="available"],.email-available[data-status="available"],.city-available[data-status="available"]{
+	color: #090;
+}
+
+.user-available[data-status="unavailable"],.email-available[data-status="unavailable"],.city-available[data-status="unavailable"]{
+	color: #f33;
+}
+
+.user-available[data-status="unavailable"]:before,.email-available[data-status="unavailable"]:before, .city-available[data-status="unavailable"]:before{
+	content:"✖"
+}
+
+.pass-reqs {
+	list-style-type: none;
+}
+
+.pass-reqs li:before {
+	color: #f33;
+	font-size: 1.125em;
+	content: "✖";
+}
+
+.pass-reqs li[data-state="achieved"]:before{
+	color: #090;
+	content: "✔";
+}
+
+.require {
+	padding-top:1em;
+}
